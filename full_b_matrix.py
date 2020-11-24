@@ -1,4 +1,3 @@
-import numpy as np
 
 def length_a_b(coords_A, coords_B):
     """fct. calculates distance between two coordinates"""
@@ -131,7 +130,7 @@ def full_B_matrix(atom_coord_list):
             if svec - num_s_vectors[-2] == 0:
                 array[initial_index - 6:] = s_vec[:]
             else:
-                array[initial_index - 6: initial_index]
+                array[initial_index - 6: initial_index] = s_vec[:]
             s_vectors.append(array)
         if svec % 3 == 0:
             #dihedrals
